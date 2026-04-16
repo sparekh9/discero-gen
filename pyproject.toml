@@ -5,12 +5,12 @@ build-backend = "hatchling.build"
 [project]
 name = "discero"
 version = "0.1.0"
-description = "Agentic course generator for the l2l learning app. BYOK: bring your own OpenAI key."
+description = "Agentic course generator for the Discero learning app. BYOK: bring your own key."
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.11"
-authors = [{ name = "l2l contributors" }]
-keywords = ["llm", "langgraph", "education", "course-generation", "openai"]
+authors = [{ name = "Siddharth Parekh" }]
+keywords = ["llm", "langgraph", "education", "course-generation", "openai", "anthropic", "claude", "gemini"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Education",

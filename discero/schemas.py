@@ -1,7 +1,4 @@
-"""Pydantic mirror of l2l's src/services/courseSchema.ts.
-
-This file is the source of truth on the Python side. If you change it,
-also update the Zod schema in l2l and bump SCHEMA_VERSION in both places.
+"""Pydantic mirror of Discero's schema.
 """
 from __future__ import annotations
 

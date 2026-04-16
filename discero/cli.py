@@ -19,7 +19,7 @@ from .state import PipelineState
 
 app = typer.Typer(
     add_completion=False,
-    help="Agentic course generator for l2l. Produces a course.json you upload to the web app.",
+    help="Agentic course generator for Discero. Produces a course.json you upload to the web app.",
 )
 
 
