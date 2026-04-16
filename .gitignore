@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.env
+*.json
+!examples/*.json
+!pyproject.toml
+.DS_Store
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

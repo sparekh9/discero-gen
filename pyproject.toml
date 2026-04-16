@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "discero"
+version = "0.1.0"
+description = "Agentic course generator for the l2l learning app. BYOK: bring your own OpenAI key."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "l2l contributors" }]
+keywords = ["llm", "langgraph", "education", "course-generation", "openai"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Education",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+  "typer>=0.12",
+  "pydantic>=2.9",
+  "pydantic-settings>=2.5",
+  "python-dotenv>=1.0",
+  "openai>=1.50",
+  "langgraph>=0.2",
+  "langchain-openai>=0.2",
+  "tavily-python>=0.5",
+  "wikipedia>=1.4",
+  "arxiv>=2.1",
+]
+
+[project.scripts]
+discero = "discero.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/sparekh9/discero"
+Issues = "https://github.com/sparekh9/discero/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["discero"]
