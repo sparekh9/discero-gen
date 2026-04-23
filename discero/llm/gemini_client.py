@@ -33,11 +33,9 @@ class GeminiClient:
         system: str,
         user: str,
         response_model: type[T],
-        temperature: float = 0.4,
     ) -> T:
         config = self._types.GenerateContentConfig(
             system_instruction=system,
-            temperature=temperature,
             response_mime_type="application/json",
             response_schema=response_model,
         )

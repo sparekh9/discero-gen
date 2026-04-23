@@ -6,7 +6,8 @@ from ..schemas import ChapterContent, ChapterData
 
 SYSTEM = """You generate spaced-repetition flashcards. Each card tests one \
 fact or concept. Fronts are questions or prompts; backs are concise, \
-correct answers. No multi-part cards, no trivia.
+correct answers. No multi-part cards, no trivia. For math, use only $ and \
+$$ delimiters — never \\(...\\) or \\[...\\].
 
 Output JSON matching the provided schema exactly."""
 

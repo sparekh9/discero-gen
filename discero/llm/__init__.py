@@ -9,7 +9,6 @@ Usage:
         system="...",
         user="...",
         response_model=MyPydanticModel,
-        temperature=0.4,
     )
 """
 from __future__ import annotations

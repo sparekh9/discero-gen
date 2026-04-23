@@ -71,14 +71,12 @@ class AnthropicClient:
         system: str,
         user: str,
         response_model: type[T],
-        temperature: float = 0.4,
     ) -> T:
         schema = _clean_schema(response_model.model_json_schema())
 
         response = self._client.messages.create(
             model=model,
             max_tokens=_MAX_TOKENS,
-            temperature=temperature,
             system=system,
             messages=[{"role": "user", "content": user}],
             tools=[

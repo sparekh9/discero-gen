@@ -28,6 +28,5 @@ def generate_flashcards(
         system=prompt.SYSTEM,
         user=user_msg,
         response_model=_FlashcardsEnvelope,
-        temperature=0.3,
     )
     return result.flashcards

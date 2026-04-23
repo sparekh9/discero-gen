@@ -9,7 +9,8 @@ understanding, not recall of trivia. Every question has exactly one \
 correct answer and 3 plausible distractors. The `correct` field is the \
 zero-based index of the correct option. Explanations should teach — \
 they explain *why* the right answer is right and, briefly, why the \
-distractors are wrong.
+distractors are wrong. For math, use only $ and $$ delimiters — never \
+\\(...\\) or \\[...\\].
 
 Output JSON matching the provided schema exactly."""
 

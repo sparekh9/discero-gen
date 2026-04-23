@@ -35,5 +35,4 @@ def generate_outline(
         system=prompt.SYSTEM,
         user=user_msg,
         response_model=CourseOutline,
-        temperature=0.4,
     )

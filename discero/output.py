@@ -42,7 +42,7 @@ def write_payload(payload: CoursePayload, out: Path) -> None:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(
         json.dumps(
-            payload.model_dump(mode="json", exclude_none=False),
+            payload.model_dump(mode="json", exclude_none=True),
             indent=2,
             ensure_ascii=False,
         ),

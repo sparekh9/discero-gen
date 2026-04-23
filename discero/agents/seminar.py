@@ -27,5 +27,4 @@ def generate_seminar(
         system=prompt.SYSTEM,
         user=user_msg,
         response_model=SeminarContent,
-        temperature=0.6,
     )

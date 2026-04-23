@@ -31,7 +31,6 @@ class OpenAIClient:
         system: str,
         user: str,
         response_model: type[T],
-        temperature: float = 0.4,
     ) -> T:
         completion = self._client.beta.chat.completions.parse(
             model=model,
@@ -40,7 +39,6 @@ class OpenAIClient:
                 {"role": "user", "content": user},
             ],
             response_format=response_model,
-            temperature=temperature,
         )
         choice = completion.choices[0].message
         if choice.parsed is None:

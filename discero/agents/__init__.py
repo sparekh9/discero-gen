@@ -23,7 +23,6 @@ def structured_call(
     system: str,
     user: str,
     response_model: type[T],
-    temperature: float = 0.4,
 ) -> T:
     completion = client.beta.chat.completions.parse(
         model=model,
@@ -32,7 +31,6 @@ def structured_call(
             {"role": "user", "content": user},
         ],
         response_format=response_model,
-        temperature=temperature,
     )
     parsed = completion.choices[0].message.parsed
     if parsed is None:

@@ -28,6 +28,5 @@ def generate_quiz(
         system=prompt.SYSTEM,
         user=user_msg,
         response_model=_QuizEnvelope,
-        temperature=0.3,
     )
     return result.quiz
